@@ -1,0 +1,9 @@
+default_platform :ios
+
+lane :coverage do
+  slather(
+    scheme: "github-challenge",
+    proj: "github-challenge.xcodeproj",
+    workspace: "./github-challenge.xcworkspace"
+  )
+end
